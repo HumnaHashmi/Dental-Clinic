@@ -46,7 +46,7 @@
                         <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
                     </div>
                 {% for service_choice in service_info %}
-                    <div class="row g-5">
+                    <div class="row g-5 float-right">
                         <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
                                 <a href="{% url 'doctorchoices' service_choice.id %}"><img class="img-fluid" src="{{service_choice.service_image.url}}" </a>
